@@ -1,0 +1,6 @@
+[submodule "raspberry-pi"]
+	path = raspberry-pi
+	url = git@github.com:tankhuu/raspberry-pi.git
+[submodule "jenkins"]
+	path = jenkins
+	url = git@github.com:tankhuu/jenkins.git
