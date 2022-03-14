@@ -2,7 +2,7 @@
 
 DOMAIN="lu3k.link"
 BUCKET="lu3k-kops-state"
-CLUSTER_CONFIG="$HOME/GitHub/practices/k8s/kops/clusters/basic/$DOMAN.yaml"
+CLUSTER_CONFIG="$HOME/GitHub/practices/k8s/kops/clusters/basic/$DOMAIN.yaml"
 export NAME="$DOMAIN"
 export KOPS_STATE_STORE="s3://$BUCKET"
 
