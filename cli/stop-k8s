@@ -1,0 +1,9 @@
+#!/bin/bash -xe
+
+DOMAIN="lu3k.link"
+BUCKET="lu3k-kops-state"
+export NAME="$DOMAIN"
+export KOPS_STATE_STORE="s3://$BUCKET"
+
+echo "=> Delete Cluster"
+kops delete cluster --name $NAME --yes
