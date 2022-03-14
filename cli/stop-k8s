@@ -6,4 +6,4 @@ export NAME="$DOMAIN"
 export KOPS_STATE_STORE="s3://$BUCKET"
 
 echo "=> Delete Cluster"
-kops delete cluster --name $NAME --yes
+time kops delete cluster --name $NAME --yes

@@ -7,11 +7,11 @@ export NAME="$DOMAIN"
 export KOPS_STATE_STORE="s3://$BUCKET"
 
 echo "=> Create Cluster Config"
-kops create -f $CLUSTER_CONFIG
+time kops create -f $CLUSTER_CONFIG
 
 echo "=> Create Cluster in AWS"
-kops update cluster --name $NAME --admin --yes
+time kops update cluster --name $NAME --admin --yes
 
 
 echo "=> Wait for Cluster to be ready ..."
-kops validate cluster --wait 10m
+time kops validate cluster --wait 10m
