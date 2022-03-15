@@ -6,6 +6,7 @@ CLUSTER_CONFIG="$HOME/GitHub/practices/k8s/kops/clusters/basic/$DOMAIN.yaml"
 export NAME="$DOMAIN"
 export KOPS_STATE_STORE="s3://$BUCKET"
 
+date
 echo "=> Create Cluster Config"
 time kops create -f $CLUSTER_CONFIG
 
@@ -15,3 +16,4 @@ time kops update cluster --name $NAME --admin --yes
 
 echo "=> Wait for Cluster to be ready ..."
 time kops validate cluster --wait 10m
+date

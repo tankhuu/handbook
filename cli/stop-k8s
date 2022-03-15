@@ -5,5 +5,7 @@ BUCKET="lu3k-kops-state"
 export NAME="$DOMAIN"
 export KOPS_STATE_STORE="s3://$BUCKET"
 
+date
 echo "=> Delete Cluster"
 time kops delete cluster --name $NAME --yes
+date
