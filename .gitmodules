@@ -4,3 +4,6 @@
 [submodule "jenkins"]
 	path = jenkins
 	url = git@github.com:tankhuu/jenkins.git
+[submodule "k8s"]
+	path = k8s
+	url = git@github.com:tankhuu/k8s.git
